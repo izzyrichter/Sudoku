@@ -161,6 +161,33 @@ td.emptyCell {
 	z-index: 500;
 }
 
+.one {
+	background-color: red;
+}
+.two {
+	background-color: orange;
+}
+.three {
+	background-color: yellow ;
+}
+.four {
+	background-color: chartreuse;
+}
+.five {
+	background-color: green;
+}
+.six {
+	background-color: blue;
+}
+.seven {
+	background-color: cyan;
+}
+.eight {
+	background-color: darkorchid;
+}
+.nine {
+	background-color: pink;
+}
 .padNumbers {
 	text-align: center;
 	padding: 6px;
@@ -169,7 +196,7 @@ td.emptyCell {
 	color: #ffffff;
     font-family: Arial, sans-serif;
     font-weight: bold;
-    cursor: pointer;
+	cursor: pointer;
 }
 
 #numPad span:hover {
