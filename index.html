@@ -104,6 +104,8 @@
 							}
 							else {
 								$(".mistakeScreen").fadeIn(100);
+								$.data(tile, 'tile', "");
+								tile.className = 'emptyCell';
 								return;
 							}
 						}
