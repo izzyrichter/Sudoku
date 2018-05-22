@@ -162,8 +162,25 @@ td.emptyCell {
 }
 
 .one {
+  color: black;
+}
+
+.one:after {
+  content: '1';
+}
+
+.hide-numbers .one:after {
+  content: '' !important;
+}
+
+.show-colors .one {
 	background-color: red;
 }
+
+/*.one {
+	background-color: red;
+}
+*/
 .two {
 	background-color: orange;
 }
