@@ -3,7 +3,7 @@
 
 <head>
 
-	<title>Izzy!</title>
+	<title>Coloroku!</title>
 	<link href="style.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="sudoku.js"></script>
 	<script type="text/javascript" src="jquery-1.11.2.min.js"></script>
@@ -164,10 +164,10 @@
 		<center class="mistakeText">Oops, you made a mistake!</center>
 	</div>
 	<div class="winScreen">
-		<center class="winText">Good Job!</center>
+		<center class="winText">Good Job! You're a winner!</center>
 	</div>
 	<section id="logosection">
-		Izzy's Sudoku!!
+		<img src="img/coloroku.svg"/>
 	</section>
 	<section id="sudokuPuzzle">
 		<div id='numPad'>
@@ -193,6 +193,8 @@
 				<span id="newGame" class="formbutton">Give me another</span>
 				<span id="solve" class="formbutton">Give up</span>
 			</form>
+			<input id="hideNumbers" type="checkbox" onChange="$('#sudokuPuzzle').toggleClass('hide-numbers', this.checked)">Hide Numbers</input>
+    	<input id="showColors" type="checkbox" onChange="$('#sudokuPuzzle').toggleClass('show-colors', this.checked)">Show Colors</input>
 		</center>
 		<table class="inner container" align="center" id="grid">
 			<tr>
@@ -301,10 +303,5 @@
 		</table>
 	</section>
 </body>
-
-<footer>
-	Web page design by Art Tucay Jr., for Uber Inc. All libraries and fonts within this page are used under personal means and
-	are not meant for commerial use.
-</footer>
 
 </html>

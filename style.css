@@ -11,11 +11,11 @@ img.logo {
 	width: 50%;
 	height: auto;
 }
-
+	
 table.container {
 	position: relative;
 	border-spacing: 0;
-	border: 4px solid #0abb9c;
+	border: 4px solid #d403f0;
 	border-collapse: collapse;
 	display: none;
 	color: #686868;
@@ -25,13 +25,13 @@ table.container {
 }
 
 td.cell {
-	border: 2px dotted #0abb9c;
+	border: 2px dotted #d403f0;
 	padding: 0;
 	cursor: context-menu;
 }
 
 td.emptyCell {
-	border: 2px dotted #0abb9c;
+	border: 2px dotted #d403f0;
 	padding: 0;
 	cursor: pointer;
 }
@@ -39,17 +39,17 @@ td.emptyCell {
 #t0x2, #t0x5, #t1x2, #t1x5, #t2x5,
 #t3x2,#t3x5, #t4x2, #t4x5, #t5x2, #t5x5,
 #t6x2, #t6x5, #t7x2, #t7x5, #t8x2, #t8x5 {
-	border-right: 3px solid #0abb9c;
+	border-right: 3px solid #d403f0;
 }
 
 #t2x0, #t2x1, #t2x3, #t2x4, #t2x6, #t2x7,
 #t5x0, #t5x1, #t5x3, #t5x4, #t5x6, #t5x7 {
-	border-bottom: 3px solid #0abb9c;
+	border-bottom: 3px solid #d403f0;
 }
 
 #t2x2, #t2x5, #t2x8, #t5x2, #t5x5, #t5x8 {
-	border-bottom: 3px solid #0abb9c;
-	border-right: 3px solid #0abb9c;
+	border-bottom: 3px solid #d403f0;
+	border-right: 3px solid #d403f0;
 }
 
 .inner td {
@@ -64,7 +64,7 @@ td.emptyCell {
 }
 
 .inner td.selected {
-	background-color:#ffbce2;
+	background-color:#fcb6dd;
 }
 
 .mistakeScreen {
@@ -75,7 +75,7 @@ td.emptyCell {
     left:50%;
     margin:-70px 0 0 -150px;
 	display: none;
-	background-color: #6e802f;
+	background-color: #44ffe0;
 	-moz-border-radius: 20px;
 	-webkit-border-radius: 20px;
 	-o-border-radius: 20px;
@@ -161,38 +161,120 @@ td.emptyCell {
 	z-index: 500;
 }
 
-.one {
+.show-colors .one {
 	background-color: red;
 }
-.two {
+.one {
+	color: #5b6360;
+}
+.one:after {
+	content: '1';
+}
+.show-colors .two {
 	background-color: orange;
 }
-.three {
+.two {
+	color:#5b6360;
+}
+.two:after {
+	content: '2';
+}
+.show-colors .three {
 	background-color: yellow ;
 }
-.four {
+.three {
+	color: #5b6360;
+}
+.three:after {
+	content: '3';
+}
+.show-colors .four {
 	background-color: chartreuse;
 }
-.five {
+.four {
+	color: #5b6360;
+}
+.four:after {
+	content: '4';
+}
+.show-colors .five {
 	background-color: green;
 }
-.six {
+.five {
+	color: #5b6360;
+}
+.five:after {
+	content: '5';
+}
+.show-colors .six {
 	background-color: blue;
 }
-.seven {
+.six {
+	color: #5b6360;
+}
+.six:after {
+	content: '6';
+}
+.show-colors .seven {
 	background-color: cyan;
 }
-.eight {
+.seven {
+	color: #5b6360;
+}
+.seven:after {
+	content: '7';
+}
+.show-colors .eight {
 	background-color: darkorchid;
 }
-.nine {
+.eight {
+	color: #5b6360;
+}
+.eight:after {
+	content: '8';
+}
+.show-colors .nine {
 	background-color: pink;
 }
+.nine {
+	color: #5b6360;
+}
+.nine:after {
+	content: '9';
+}
+.hide-numbers .one:after {
+	content: '' !important;
+}
+.hide-numbers .two:after {
+	content: '' !important;
+}
+.hide-numbers .three:after {
+	content: '' !important;
+}
+.hide-numbers .four:after {
+	content: '' !important;
+}
+.hide-numbers .five:after {
+	content: '' !important;
+}
+.hide-numbers .six:after {
+	content: '' !important;
+}
+.hide-numbers .seven:after {
+	content: '' !important;
+}
+.hide-numbers .eight:after {
+	content: '' !important;
+}
+.hide-numbers .nine:after {
+	content: '' !important;
+}
+
 .padNumbers {
 	text-align: center;
 	padding: 6px;
 	line-height: 40px;
-	font-size: 20px;
+	font-size: 15px;
 	color: #ffffff;
     font-family: Arial, sans-serif;
     font-weight: bold;
