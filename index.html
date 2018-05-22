@@ -168,6 +168,8 @@
 	</div>
 	<section id="logosection">
 		Izzy's Sudoku!!
+		<input id="hideNumbers" type="checkbox" onChange="$('#sudokuPuzzle').toggleClass('hide-numbers', this.checked)">Hide Numbers</input>
+		<input id="showColors" type="checkbox" onChange="$('#sudokuPuzzle').toggleClass('show-colors', this.checked)">Show Colors</input>
 	</section>
 	<section id="sudokuPuzzle">
 		<div id='numPad'>
